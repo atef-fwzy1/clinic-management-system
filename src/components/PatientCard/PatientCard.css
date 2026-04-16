@@ -17,7 +17,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    /* لأن الواجهة RTL */
+
 }
 
 .patient-main-info {
@@ -94,9 +94,9 @@
 
 .file-btn {
 background: #fff5f5;
-    /* خلفية حمراء فاتحة جداً */
+   
     color: #ff4d4d;
-    /* لون أحمر واضح للنص والأيقونة */
+ 
     border: 1px solid #ffe3e3;
     padding: 12px 15px;
     border-radius: 12px;
