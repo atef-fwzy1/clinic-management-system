@@ -1,0 +1,30 @@
+.login-link-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 24px 0 8px;
+}
+
+.login-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a5368;
+}
+
+.login-link-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #2348e0;
+  padding: 0;
+  transition: opacity 0.15s;
+}
+
+.login-link-btn:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}

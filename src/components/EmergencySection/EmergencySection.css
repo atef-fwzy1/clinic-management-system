@@ -1,0 +1,63 @@
+.emergency-section {
+  background: #fff5f5;
+  border: 1.5px solid #fed7d7;
+  border-radius: 16px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+      margin: 60px 0px;
+}
+
+.emergency-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.emergency-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: #e53e3e;
+}
+
+.emergency-desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+  text-align: right;
+  line-height: 1.7;
+}
+
+.cancel-btn {
+  background: #e53e3e;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 16px 20px;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.cancel-btn:hover {
+  background: #c53030;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(229, 62, 62, 0.35);
+}
+
+.cancel-btn:active {
+  transform: translateY(0);
+}
+
+.cancel-btn.cancelled {
+  background: #4a5568;
+}

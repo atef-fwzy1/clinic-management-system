@@ -1,0 +1,23 @@
+:root {
+    --primary-blue: #007bff;
+    --bg-light: #f8faff;
+    --text-dark: #333;
+    --text-muted: #777;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    direction: rtl;
+    /* Based on the Arabic UI */
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    
+    /* Space for BottomNav */
+}

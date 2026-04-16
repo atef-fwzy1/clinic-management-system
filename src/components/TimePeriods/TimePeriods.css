@@ -1,0 +1,131 @@
+.time-periods-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+      margin: 45px 0px;
+}
+
+.periods-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: right;
+}
+
+.edit-hours-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1a56db;
+  font-family: "Cairo", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.edit-hours-btn:hover {
+  background: #e8eefb;
+}
+
+.periods-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.period-row {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.period-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.period-icon-wrap.morning {
+  background: #fff8e6;
+}
+
+.period-icon-wrap.evening {
+  background: #eef0f8;
+}
+
+.period-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex: 1;
+}
+
+.period-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.period-time {
+  font-size: 13px;
+  color: #9aa5b4;
+  font-weight: 500;
+}
+
+.period-badge {
+  font-family: "Cairo", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.period-badge.complete {
+  background: #e6f4ee;
+  color: #38a169;
+}
+
+.period-badge.available {
+  background: #eef0f8;
+  color: #4a5568;
+}
+
+.period-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.period-arrow:hover {
+  background: #f0f4f8;
+}

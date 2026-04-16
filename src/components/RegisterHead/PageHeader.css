@@ -1,0 +1,22 @@
+.page-header {
+  text-align: center;
+  padding: 22px 0 26px;
+}
+
+.page-title {
+  font-size: 25px;
+  font-weight: 900;
+  color: #0d0f1a;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  margin-bottom: 6px;
+    padding: 6px;
+}
+
+.page-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7a8499;
+  margin-top: 4px;
+}

@@ -1,0 +1,87 @@
+.patient-list-container {
+  
+    margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.list-header h4 {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0;
+}
+
+.list-header a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.patient-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);}
+.patient-item:hover{
+border: 1px solid #007bff;
+border-radius: 15px;
+transform: scale(1.05);
+}
+ 
+.item-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.item-text h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.item-text p {
+    margin: 4px 0 0;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.status-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+}
+
+.status-icon.done {
+    background: #e7f9ee;
+    color: #28a745;
+}
+
+.completed h5,
+.completed p {
+    color: #bbb;
+}
+.status-icon.delayed {
+background: #fff5f5;
+    color: #ff4d4d;
+}

@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 22px 18px;
+  background: #ffffff;
+  direction: rtl;
+  margin: 20px 0px;
+}
+
+.header-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: 0.2px;
+}
+
+.header-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(42, 157, 143, 0.3);
+}
+
+.header-avatar svg {
+  display: block;
+}

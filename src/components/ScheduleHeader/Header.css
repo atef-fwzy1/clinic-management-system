@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.header-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: 0.3px;
+}
+
+.header-icon-btn,
+.header-arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.header-icon-btn:hover,
+.header-arrow-btn:hover {
+  background: #f0f4f8;
+}

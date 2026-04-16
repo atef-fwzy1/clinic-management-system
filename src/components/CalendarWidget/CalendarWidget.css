@@ -1,0 +1,95 @@
+.calendar-card {
+background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 18px 22px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin: 40px 0px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar-month {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: 0.2px;
+}
+
+.cal-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.cal-nav-btn:hover {
+  background: #f0f4f8;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+}
+
+.weekday-label {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #9aa5b4;
+  padding: 4px 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-day {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.cal-day:hover:not(.selected):not(.empty) {
+  background: #f0f4f8;
+}
+
+.cal-day.empty {
+  cursor: default;
+  pointer-events: none;
+}
+
+.cal-day.selected {
+  background: #1a56db;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.cal-day.in-range {
+  background: #dce8fb;
+  color: #1a56db;
+  border-radius: 12px;
+}

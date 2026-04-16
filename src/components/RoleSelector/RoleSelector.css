@@ -1,0 +1,54 @@
+.role-section {
+  margin-bottom: 28px;
+}
+
+.role-question {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0d0f1a;
+  margin-bottom: 12px;
+}
+
+.role-cards {
+  display: flex;
+  gap: 12px;
+  flex-direction: row-reverse;
+}
+
+.role-card {
+  flex: 1;
+  background: #ffffff;
+  border: 2px solid #e4e9f2;
+  border-radius: 16px;
+  padding: 18px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-family: "Cairo", sans-serif;
+}
+
+.role-card:hover {
+  border-color: #b0bde8;
+  background: #f6f8fe;
+}
+
+.role-card.active {
+  border-color: #2348e0;
+  background: #f0f3fd;
+  box-shadow: 0 0 0 1px #2348e0;
+}
+
+.role-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d0f1a;
+}
+
+.role-card.active .role-label {
+  color: #2348e0;
+}
