@@ -12,7 +12,7 @@ const Home = () => {
       <Header />
       <div style={{ padding: '0 15px',marginBottom: "30px"}}>
         <PatientList />
-        <QuickActions/>
+        {/* <QuickActions/> */}
         <BottomNav/>
         {/* <ActionCards /> */}
       </div>

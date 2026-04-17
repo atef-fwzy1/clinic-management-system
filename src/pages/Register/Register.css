@@ -1,14 +1,23 @@
 .register{
         background: #dde4ed;
 }.box{
-    width: 390px;
-        min-height: 844px;
+    width: 50vw;
+        
         background: #fff;
         border-radius: 44px;
         overflow: hidden;
-        box-shadow: 0 0 0 10px #c8d0dc, 0 32px 80px rgba(0, 0, 0, 0.28);
+        /* box-shadow: 0 0 0 10px #c8d0dc, 0 32px 80px rgba(0, 0, 0, 0.28); */
         display: flex;
         flex-direction: column;
         margin: auto;
             padding: 15px;
+}
+
+.row-register{
+    display: flex;
+        align-items: center;
+        gap: 31px;
+        align-items: center;
+        justify-content: center;
+
 }

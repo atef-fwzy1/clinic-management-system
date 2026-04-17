@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './PatientList.css';
 import PatientCard from '../PatientCard/PatientCard';
-// const PatientItem = ({ name, time, type, status }) => {
-
-// };
+import {Link} from "react-router"
 
 const PatientList = () => {
 
@@ -40,7 +38,9 @@ setPatients(updated.sort((a, b) => a.status - b.status));
   return (
     <div className="patient-list-container">
       <div className="list-header">
+        <Link to={"allnatients"}>
         <a href="#">عرض الكل</a>
+        </Link>
         <h4>المرضى اللي عليهم الدور</h4>
       </div>
       {patients.map((p, idx) => <PatientCard key={idx}  name={p.name} time={p.time} type={p.type} status={p.status} id={p.id} current={idx} actionButt={sortPationts}/>)}

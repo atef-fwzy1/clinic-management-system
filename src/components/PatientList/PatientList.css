@@ -3,7 +3,8 @@
     margin-top: 20px;
         display: flex;
         flex-direction: column;
-        height: 85vh;
+        height: fit-content;
+        margin-bottom: 90px;
 }
 
 .list-header {
@@ -11,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .list-header h4 {

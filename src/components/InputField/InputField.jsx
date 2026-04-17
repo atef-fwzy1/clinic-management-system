@@ -82,7 +82,7 @@ export default function InputField({
           placeholder={placeholder}
           value={value}
           onChange={(e) => onChange && onChange(e.target.value)}
-          dir={type === "email" || type === "password" ? "ltr" : "rtl"}
+          dir="rtl"
         />
         {isPassword && (
           <button

@@ -1,0 +1,8 @@
+.patientdetails{
+
+}
+@media(max-width:550px){
+    .patientdetails {
+        width: 100%;
+    }
+}

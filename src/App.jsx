@@ -8,6 +8,8 @@ import SettingProfile from './pages/SettingProfile/SettingProfile'
 import NotFound from './pages/NotFoundPage/NotFoundPage'
 import Register from './pages/Register/Register'
 import PatientDetails from './pages/PatientDetails/PatientDetails'
+import AllPatients from './pages/AllPatients/AllPatients'
+import LoginPage  from './pages/Login/LoginPage'
  function App() {
       return (
             <Routes>
@@ -15,7 +17,9 @@ import PatientDetails from './pages/PatientDetails/PatientDetails'
              <Route path='/DoctorSchedule' element={<DoctorSchedule/>}/>
              <Route path='/settings' element={<SettingProfile/>}/>
              <Route path='register' element={<Register/>}/>
-             <Route path='patientdetails/:pationtId' element={<PatientDetails/>}/>
+             <Route path='/patientdetails/:pationtId' element={<PatientDetails/>}/>
+             <Route path='/allnatients' element={<AllPatients/>}/>
+             <Route path='/login' element={<LoginPage/>}/>
              <Route path='*' element={<NotFound/>}/>
             </Routes>
       )

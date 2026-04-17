@@ -1,0 +1,82 @@
+.med-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #fafafa;
+  border-radius: 14px;
+  border: 1px solid #f0f0f0;
+  direction: rtl;
+}
+
+.med-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 38px;
+}
+
+.check-done {
+  width: 22px;
+  height: 22px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-empty {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+
+.med-timing-label {
+  font-size: 10px;
+  color: #999;
+  font-weight: 500;
+}
+
+.med-details {
+  flex: 1;
+  text-align: right;
+}
+
+.med-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.med-meta {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  color: #888;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.med-dot-sep {
+  color: #ccc;
+}
+
+.med-timing {
+  color: #1a7ae8;
+  font-weight: 500;
+}
+
+.med-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

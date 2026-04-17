@@ -1,0 +1,36 @@
+.section {
+  background: white;
+  margin: 10px 0 0;
+  padding: 18px 16px;
+  direction: rtl;
+  border-radius: 15px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #1a7ae8;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

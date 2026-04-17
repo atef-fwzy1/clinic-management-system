@@ -1,0 +1,76 @@
+.login-card {
+     width: 52vw;
+    background: var(--white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    animation: cardFadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+}
+@media (max-width:800px){
+    .login-card , .box{
+        width: 65vw;
+    }
+}@media (max-width:800px){
+    .login-card , .box{
+        width: 75vw;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .login-card, .box{
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 0 !important;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+    }
+}
+
+@keyframes cardFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.login-card__inner {
+padding: 12px 27px 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    direction: rtl;
+}
+
+.login-card__handle {
+    width: 48px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 99px;
+    margin: 12px auto 16px;
+}
+
+@media (max-width: 520px) {
+    .login-card {
+        border-radius: 22px;
+    }
+
+    .login-card__inner {
+        padding: 36px 24px 28px;
+    }
+}

@@ -26,12 +26,12 @@ body {
   direction: rtl;
   background: var(--light-bg);
   color: var(--text-dark);
+  background: #dde4ed !important;
 }
 
 
 .container {
   width: 100%;
-  max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
 }

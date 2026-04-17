@@ -19,7 +19,7 @@ const BottomNav = () => {
   return (
     <nav className="bottom-nav">
       {navItems.map((item) => (
-        <Link  to={item.id==""?"/":item.id =="DoctorSchedule"?"/DoctorSchedule":item.id=="settings"?"/settings":"/notfound"}>
+        <Link  to={item.id==""?"/":item.id =="DoctorSchedule"?"/DoctorSchedule":item.id=="settings"?"/settings":"/allnatients"}>
         <button  
           key={item.id}
           className={`nav-btn ${active === item.id ? 'active' : ''}`}

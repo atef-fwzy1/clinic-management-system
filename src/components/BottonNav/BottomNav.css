@@ -14,6 +14,12 @@ position: fixed;
   left: 22%;
   transform: translate(-12%, -50%);
   max-width: 79vw;
+  border-radius: 15px;
+}
+@media(max-width:720px){
+  .bottom-nav{
+    
+  }
 }
 
 .nav-btn {

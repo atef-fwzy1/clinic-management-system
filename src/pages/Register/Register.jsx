@@ -2,7 +2,7 @@ import PageHeader from "../../components/RegisterHead/PageHeader"
 import RoleSelector from "../../components/RoleSelector/RoleSelector"
 import InputField from "../../components/InputField/InputField"
 import SubmitButton from "../../components/SubmitButton/SubmitButton";
-import SocialLogin from "../../components/SocialLogin/SocialLogin";
+import SocialLogin from "../../components/SocialRegister/SocialLogin";
 import LoginLink from "../../components/LoginLink/LoginLink";
 import React, { useState } from "react";
 import "./Register.css"
@@ -56,9 +56,11 @@ export default function Register(){
                       value={password}
                       onChange={setPassword}
                     />
+                   <div className="row-register">
                    <SubmitButton label="إنشاء حساب" onClick={handleSubmit} loading={loading} />
-                   <SocialLogin/>
-                   <LoginLink/>
+                    <SocialLogin/>
+                   </div>
+                   <LoginLink from={"register"}/>
                   
             </div>
           </div>

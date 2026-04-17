@@ -1,0 +1,10 @@
+.labs-section {
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.labs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,13 +1,16 @@
 
 import './Header.css';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import {Link} from "react-router"
 const Header = () => {
   return (
     <header className="main-header">
       <div className="top-row">
       
+
         <div className="doctor-profile">
-         
+           <Link to={"settings"}>
+           
           <div className="doctor-info">
             <div>
               <h3>د. ياسمين علي</h3>
@@ -15,6 +18,8 @@ const Header = () => {
             </div>
           <img src="./public/avatar.jpg" alt="Doctor" className="avatar" />
           </div>
+           </Link>
+         
         </div>
             <div className="notification-bell"><NotificationsActiveIcon/></div>
       </div>
