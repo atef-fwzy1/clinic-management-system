@@ -5,11 +5,11 @@ import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import {Link} from "react-router"
 
-const PatientCard = ({ name, time, type, status  , current , actionButt,id}) => {
+const PatientCard = ({ name, time, type, status, actionButt,id ,page , quee}) => {
  
-  return current  != 0 ?
-  <Link to={`/patientdetails/${id}`}>
-   <div className={`patient-item ${status === 'done' ? 'completed' : ''}`}>
+  return  page =="allpatient" ?
+     <Link to={`/patientdetails/${id}`}>
+    <div className={`patient-item ${status === 'done' ? 'completed' : ''}`}>
       <div className="item-options">...</div>
       <div className="item-content">
         <div className="item-text">
@@ -22,10 +22,24 @@ const PatientCard = ({ name, time, type, status  , current , actionButt,id}) => 
         </div>
       </div>
     </div>
-  </Link>
-    
-  :
-     <div className="current-patient-card ">
+  </Link>:page =="home" && quee !== 0 ? <Link to={`/patientdetails/${id}`}>
+    <div className={`patient-item ${status === 'done' ? 'completed' : ''}`}>
+      <div className="item-options">...</div>
+      <div className="item-content">
+        <div className="item-text">
+          <h5>{name}</h5>
+          <p>{type} • {time}</p>
+        </div>
+        <div className={`status-icon ${status === 1 ? 'pending' : status === 2?'delayed':'done' }`}>
+
+                   {status === 3 ? '✓' : status === 1 ? <EmojiEmotionsIcon sx={{color:"#03a9f4"}}/> : <AccessAlarmIcon/>}
+        </div>
+      </div>
+    </div>
+  </Link>:
+
+  
+   <div className="current-patient-card ">
       <div className="card-header">
         <span className="status-badge">الحالة الحالية</span>
         <div className="patient-main-info">
@@ -54,7 +68,8 @@ const PatientCard = ({ name, time, type, status  , current , actionButt,id}) => 
           تأجيل 
         </button>
       </div>
-    </div> 
+    </div>
+    
 };
 
 export default PatientCard;

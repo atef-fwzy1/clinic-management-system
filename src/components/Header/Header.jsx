@@ -21,7 +21,9 @@ const Header = () => {
            </Link>
          
         </div>
+        <Link to={"/login"}>    
             <div className="notification-bell"><NotificationsActiveIcon/></div>
+        </Link>
       </div>
       
       <div className="stats-row">

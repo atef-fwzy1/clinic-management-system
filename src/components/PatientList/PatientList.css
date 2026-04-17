@@ -41,7 +41,7 @@
 .patient-item:hover{
 border: 1px solid #007bff;
 border-radius: 15px;
-transform: scale(1.05);
+transform: scale(1.01);
 }
  
 .item-content {

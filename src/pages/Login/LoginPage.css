@@ -11,11 +11,11 @@
 }
 @media (max-width:800px){
     .login-card , .box{
-        width: 65vw;
+        width: 70vw;
     }
-}@media (max-width:800px){
+}@media (max-width:850px){
     .login-card , .box{
-        width: 75vw;
+        width: 80vw;
     }
     .container{
         width: 100%;

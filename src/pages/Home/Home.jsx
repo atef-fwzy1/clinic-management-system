@@ -11,7 +11,7 @@ const Home = () => {
     <div className="container">
       <Header />
       <div style={{ padding: '0 15px',marginBottom: "30px"}}>
-        <PatientList />
+        <PatientList  page = "home"/>
         {/* <QuickActions/> */}
         <BottomNav/>
         {/* <ActionCards /> */}

@@ -1,0 +1,9 @@
+.MuiInputBase-root{
+        padding: 0px 42px;
+    }
+    
+    .css-ptdwpq-MuiPaper-root-MuiAppBar-root{
+    padding: 1px 8px;
+    width: fit-content !important;
+    border-radius: 14px;
+}

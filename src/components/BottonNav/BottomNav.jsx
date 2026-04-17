@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import SettingsIcon from '@mui/icons-material/Settings';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 const navItems = [
   { id: '', label: 'الرئيسية', icon: <HomeIcon/> },
   { id: 'DoctorSchedule', label: 'المواعيد', icon: <CalendarMonthIcon/>},
@@ -15,8 +16,9 @@ const navItems = [
 const BottomNav = () => {
   const activeUrl =  window.location.pathname.split("/")
   const [active, setActive] = useState(activeUrl[activeUrl.length -1]);
-    console.log(active)
   return (
+    <div>
+
     <nav className="bottom-nav">
       {navItems.map((item) => (
         <Link  to={item.id==""?"/":item.id =="DoctorSchedule"?"/DoctorSchedule":item.id=="settings"?"/settings":"/allnatients"}>
@@ -33,8 +35,11 @@ const BottomNav = () => {
         </button>
           </Link>
       ))}
-      <button className="fab-btn">+</button>
     </nav>
+      <Link to="/contactus">
+      <button className="fab-btn"><PhoneEnabledIcon/></button>
+      </Link>
+    </div>
   );
 };
 

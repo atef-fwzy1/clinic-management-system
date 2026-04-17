@@ -10,6 +10,7 @@ import Register from './pages/Register/Register'
 import PatientDetails from './pages/PatientDetails/PatientDetails'
 import AllPatients from './pages/AllPatients/AllPatients'
 import LoginPage  from './pages/Login/LoginPage'
+import ContactUs from './pages/ContactUs/ContactUs'
  function App() {
       return (
             <Routes>
@@ -20,6 +21,7 @@ import LoginPage  from './pages/Login/LoginPage'
              <Route path='/patientdetails/:pationtId' element={<PatientDetails/>}/>
              <Route path='/allnatients' element={<AllPatients/>}/>
              <Route path='/login' element={<LoginPage/>}/>
+             <Route path='/contactus' element={<ContactUs/>}/>
              <Route path='*' element={<NotFound/>}/>
             </Routes>
       )

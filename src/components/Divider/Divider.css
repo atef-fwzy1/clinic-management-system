@@ -5,6 +5,7 @@
   gap: 14px;
   margin: 28px 0 24px;
   animation: fadeIn 0.4s ease 0.5s both;
+  margin: 20px auto;
 }
 
 @keyframes fadeIn {
