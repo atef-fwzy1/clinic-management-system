@@ -1,0 +1,63 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 20px 18px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.topbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.topbar-greeting {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8e9ab0;
+}
+
+.topbar-clinic {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0d1022;
+  letter-spacing: -0.3px;
+}
+
+.topbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+
+.topbar-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.avatar-btn {
+  background: #edf0fd;
+}
+
+.avatar-btn:hover {
+  background: #dce3fb;
+}
+
+.bell-btn {
+  background: #f2f4f8;
+}
+
+.bell-btn:hover {
+  background: #e8edf5;
+}

@@ -9,7 +9,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 const navItems = [
   { id: '', label: 'الرئيسية', icon: <HomeIcon/> },
   { id: 'DoctorSchedule', label: 'المواعيد', icon: <CalendarMonthIcon/>},
-  { id: 'patients', label: 'المرضى', icon: <Diversity3Icon/> },
+  { id: 'allnatients', label: 'المرضى', icon: <Diversity3Icon/> },
   { id: 'settings', label: 'الإعدادات', icon: <SettingsIcon/> },
 ];
 

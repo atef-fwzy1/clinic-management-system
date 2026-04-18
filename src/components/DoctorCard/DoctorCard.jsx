@@ -1,7 +1,9 @@
 import React from "react";
 import "./DoctorCard.css";
 
-export default function DoctorCard({ name, specialty }) {
+export default function DoctorCard({ name, specialty  , type}) {
+
+  //  name={currentUser.name} specialty={currentUser.clinicName} type={currentUser.type}
   return (
     <div className="doctor-card-wrap">
       <div className="doctor-card">
@@ -11,7 +13,7 @@ export default function DoctorCard({ name, specialty }) {
           </svg>
         </button>
         <div className="doctor-info doctor-info-cloumn" >
-          <span className="doctor-name">{name}</span>
+          <span className="doctor-name">{type=="nurse"?"ممرض " + name: "د." + name}</span>
           <span className="doctor-specialty">{specialty}</span>
         </div>
         <div className="doctor-avatar">

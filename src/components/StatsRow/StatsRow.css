@@ -1,0 +1,86 @@
+.stats-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.stats-card {
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Blue — Next Patient */
+.next-card {
+  flex: 1.1;
+  background: #2348e0;
+  box-shadow: 0 6px 24px rgba(35,72,224,0.35);
+}
+
+.next-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.78);
+  text-align: right;
+}
+
+.next-number-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.next-number {
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.next-nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.next-nav-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* White — Total */
+.total-card {
+  flex: 1;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(35,72,224,0.07);
+}
+
+.total-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e9ab0;
+  text-align: right;
+}
+
+.total-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.total-number {
+  font-size: 32px;
+  font-weight: 900;
+  color: #2348e0;
+  letter-spacing: -1px;
+}
