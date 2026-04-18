@@ -21,7 +21,7 @@ import {ProtectedRouteNurse , ProtectedRouteDoctor} from './ProtectedRoute/Prote
             {type:"nurse" , name:"عبدالحميدعطيه" , clinicName :"عيادة الباطنة",role:"nurse"},
             {type:"doctor" , name:"ياسمين علي" , clinicName :"استشاري جراحة العظام",role:"doctor"}
       ]
-      const [currentuser ,setCurrentuser ] = useState(currnetUserdata[0])
+      const [currentuser ,setCurrentuser ] = useState(currnetUserdata[1])
 
       return (
    <CurrentUserContext.Provider value={currentuser }>
