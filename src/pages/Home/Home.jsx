@@ -9,7 +9,7 @@ import BottomNav from '../../components/BottonNav/BottomNav.jsx';
 const Home = () => {
   return (
     <div className="container">
-      <Header />
+      <Header page/>
       <div style={{ padding: '0 15px',marginBottom: "30px"}}>
         <PatientList  page = "home"/>
         {/* <QuickActions/> */}

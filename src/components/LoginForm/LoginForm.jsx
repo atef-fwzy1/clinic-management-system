@@ -2,8 +2,13 @@ import { useState } from 'react';
 import InputField from '../InputField/InputField';
 import SubmitButton from '../SubmitButton/SubmitButton';
 import './LoginForm.css';
+import {useContext} from "react"
+import {AlertContext} from "../../Context/AlertContext"
+import { useNavigate } from "react-router";
+import {CurrentUserContext}  from "../../Context/CurrentUserContext"
+import axios from "axios";
+import Cookies from "universal-cookie";
 
-/* ── Icons ── */
 const UserIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -19,17 +24,53 @@ const LockIcon = () => (
 );
 
 export default function LoginForm() {
-  const [credentials, setCredentials] = useState({ gmail: '', password: '' });
+  const cookies = new Cookies();
+     const {currentuser,setCurrentuser} = useContext(CurrentUserContext)
+   const handelAlert = useContext(AlertContext)
+  const navigate = useNavigate();
+  const [credentials, setCredentials] = useState({ userName: '', password: '' });
   const [loading, setLoading] = useState(false);
 
 const handleChange = (field, value) => {
   setCredentials((prev) => ({ ...prev, [field]: value }));
 };
-  console.log(credentials )
+
   const handleSubmit = (e) => {
-    e.preventDefault();
     setLoading(true);
-    setTimeout(() => setLoading(false), 1800);
+
+     axios.post("/api/Account/login",{
+      "identifier": credentials.userName.trim(),
+      "password": credentials.password.trim(),
+      "rememberMe": true
+      }).then((data) => {
+        console.log(data.data.data.role)
+        handelAlert("success",data.data.message)
+  
+        // set data to cookies 
+        cookies.set("userToken",data.data.data.token,{ path: "/" })
+        // set data to localstorage 
+        
+            localStorage.setItem("userInfo", JSON.stringify({type:data.data.data.role,
+               name:data.data.data.displayName,
+               role:data.data.data.role,
+               id:data.data.data.id,
+               clinicName:"اسم العياده غير موجود"}));
+                  setLoading(false);
+               if(data.data.data.role == "nurse")
+                      window.location.pathname = "/nurse"
+                else if(data.data.data.role == "Doctor")
+                    window.location.pathname = "/"
+               else if(data.data.data.role == "Admin" || data.data.data.role == "Reception" )
+                    window.location.pathname =   "/dashboard"  
+                else 
+                  handelAlert("error", "ليس لديك اي صلحيات في الوصول")
+
+          })
+          .catch((err) => {
+            console.log(err.response)
+        handelAlert("error", "اليوزر أو كلمة المرور غير متطابقين");
+         setLoading(false);
+          });
   };
 
   return (
@@ -37,11 +78,11 @@ const handleChange = (field, value) => {
       <div className="login-form__fields">
         <InputField
           id="identifier"
-          label="رقم الموبايل أو البريد الإلكتروني"
+          label=" او رقم الهاتف أسم المستخدم"
           type="text"
           placeholder="اكتب بياناتك هنا"
-          value={credentials.gmail}
-        onChange={(value) => handleChange('gmail', value)}
+          value={credentials.userName}
+        onChange={(value) => handleChange('userName', value)}
           icon={<UserIcon />}
         />
         <InputField

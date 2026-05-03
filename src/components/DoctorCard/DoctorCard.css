@@ -3,34 +3,21 @@
 }
 
 .doctor-card {
-background: #ffffff;
-  border-radius: 18px;
-  padding: 20px 18px 20px 14px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  display: flex;
-  align-items: center;
-  justify-content: unset;
-  gap: 14px;
-  direction: ltr;
-  margin: 20px 0px;
-}
+    background: #ffffff;
+      border-radius: 18px;
+      padding: 20px 18px 20px 14px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: unset;
+      gap: 14px;
+      direction: ltr;
+      margin: 20px 0px;
+      justify-content: end;}
 
-.doctor-arrow {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  transition: background 0.15s;
-}
 
-.doctor-arrow:hover {
-  background: #f0f4f8;
-}
+
+
 
 .doctor-info {
   display: flex;
@@ -42,7 +29,7 @@ background: #ffffff;
 .doctor-name {
   font-size: 19px;
   font-weight: 800;
-  color: #1a1a2e;
+  color: #282525 !important;
   letter-spacing: 0.2px;
 }
 

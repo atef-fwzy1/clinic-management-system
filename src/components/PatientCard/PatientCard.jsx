@@ -63,7 +63,13 @@ const PatientCard = ({ name, time, type, status, actionButt,id ,page , quee}) =>
       </div>
 
       <div className="card-actions">
-        <button className="start-btn" >ابدأ الكشف ▶</button>
+        <button className="start-btn" style={{className:"start-btn" }}>
+          
+        <Link to={"patientdetails/"+"4856165"} style={{display:"block"}}> 
+          ابدأ الكشف▶
+        </Link>
+
+           </button>
         <button className="file-btn" onClick={()=>actionButt()} >
           تأجيل 
         </button>

@@ -39,8 +39,10 @@ display: flex;
 }
 
 .stats-pills {
-    display: flex;
+display: flex;
     gap: 8px;
+    width: fit-content;
+    align-items: center;
 }
 
 .pill {

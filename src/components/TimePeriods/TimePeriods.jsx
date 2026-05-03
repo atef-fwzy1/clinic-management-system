@@ -1,6 +1,8 @@
 import React from "react";
 import "./TimePeriods.css";
-
+import { useContext } from "react";
+import { Link } from 'react-router';
+import {scheduleDateContext} from "../../Context/scheduleDateContext"
 function PeriodRow({ icon, title, time, badge, badgeType }) {
   return (
     <div className="period-row">
@@ -22,15 +24,18 @@ function PeriodRow({ icon, title, time, badge, badgeType }) {
 }
 
 export default function TimePeriods() {
+   const showschedule = useContext(scheduleDateContext)
   return (
     <div className="time-periods-section">
       <div className="periods-header">
-        <button className="edit-hours-btn">
+        <button className="edit-hours-btn" onClick={()=> showschedule.setShowAddate(true)}>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
             <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="#1a56db" strokeWidth="2" strokeLinecap="round"/>
             <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="#1a56db" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          <span>تعديل الساعات</span>
+        <Link to="/DoctorSchedule/setschedule">
+          <span> اضافه فترات</span>
+        </Link>
         </button>
         <h2 className="section-title">إدارة الفترات</h2>
       </div>

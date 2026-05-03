@@ -21,7 +21,7 @@ const Header = () => {
            </Link>
          
         </div>
-        <Link to={"/login"}>    
+        <Link to={"/messages/5465"}>    
             <div className="notification-bell"><NotificationsActiveIcon/></div>
         </Link>
       </div>

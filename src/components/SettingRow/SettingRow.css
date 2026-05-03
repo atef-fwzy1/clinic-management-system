@@ -8,6 +8,7 @@
     margin-bottom: 20px;
     box-shadow: var(--shadow);
     overflow: hidden;
+    margin: 10px 0px;
 }
 
 .settings-item {
@@ -16,8 +17,16 @@
     padding: 16px;
     cursor: pointer;
     justify-content: space-between;
+    transition: all 0.5s;
+    margin: 10px;
+    border-radius : 15px;
 }
 
+
+.settings-item:hover{
+    border: 1px solid #007bff;
+        /* transform: scale(1.0001); */
+}
 .border-bottom {
     border-bottom: 1px solid var(--border-light);
 }

@@ -3,6 +3,9 @@ import './ContactUs.css';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+import TtyIcon from '@mui/icons-material/Tty';
 import {Link} from "react-router"
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -128,6 +131,7 @@ const ContactUs = () => {
 
           <ContactInfoCard 
             icon="teal" 
+            eleIco={<TtyIcon/>}
             label="Main Line" 
             primary="+20 110 000 0001" 
             secondary="Sat – Thu, 8 AM – 10 PM" 
@@ -137,7 +141,8 @@ const ContactUs = () => {
           />
 
           <ContactInfoCard 
-            icon="sky" 
+            icon="green"
+            eleIco={<HeadsetMicIcon/>}
             label="Appointments" 
             primary="+20 110 000 0002" 
             secondary="Book or reschedule visits" 
@@ -148,7 +153,8 @@ const ContactUs = () => {
           />
 
           <ContactInfoCard 
-            icon="green" 
+            icon="teal"
+            eleIco={<PhoneEnabledIcon/>}
             label="Email" 
             primary="hello@novamed.clinic" 
             secondary="We respond within 2–4 hours" 
@@ -217,7 +223,7 @@ const ContactUs = () => {
       </div>
 
     </div>
-      {/* Socials */}
+    
       <section className="social-section">
         <h2>Follow Us</h2>
         <div className="social-grid">
@@ -227,12 +233,12 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* Footer */}
+     
       <footer className="footer">
         <p>© 2026 <strong>NameHere</strong> · All rights reserved</p>
       </footer>
 
-      {/* Success Toast */}
+   
       <div className={`toast ${showToast ? 'show' : ''}`}>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="10" fill="#22c55e" />
@@ -244,12 +250,13 @@ const ContactUs = () => {
   );
 };
 
-/* Sub-components for cleaner code */
-const ContactInfoCard = ({ icon, label, primary, secondary, badge, link, delay, badgeStyle }) => (
+
+const ContactInfoCard = ({ icon,eleIco, label, primary, secondary, badge, link, delay, badgeStyle }) => (
   <a href={link} className={`contact-card fade-up ${delay}`}>
     <div className={`card-icon icon-${icon}`}>
-       {/* Icons can be passed as props or defined based on type */}
+  
        <div className="dot-placeholder"></div>
+       {eleIco}
     </div>
     <div className="card-body">
       <p className="card-label">{label}</p>

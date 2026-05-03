@@ -61,6 +61,7 @@ export default function InputField({
   iconType = "user",
   value,
   onChange,
+  hasErr
 }) {
   const [showPassword, setShowPassword] = useState(false);
   const isPassword = type === "password";
@@ -68,11 +69,11 @@ export default function InputField({
 
   return (
     <div className="input-field" dir="rtl">
-      <div className="input-label-row">
+      <div className="input-label-row" >
         <span className="input-label">{label}</span>
         {labelSuffix && <span className="input-label-suffix">{labelSuffix}</span>}
       </div>
-      <div className="input-wrap">
+      <div className={"input-wrap "+ hasErr}>
         <div className="input-icon-left">
           {isPassword ? (showPassword ? <EyeIcon /> : <EyeOffIcon />) : ICONS[iconType]}
         </div>
@@ -87,7 +88,7 @@ export default function InputField({
         {isPassword && (
           <button
             type="button"
-            className="input-toggle"
+            className="input-toggle" 
             onClick={() => setShowPassword((p) => !p)}
             tabIndex={-1}
           />

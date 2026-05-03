@@ -50,7 +50,7 @@ body {
   bottom: 0;
   width: 100%;
   max-width: 600px;
- 
+
   background: #fff;
   display: flex;
   justify-content: space-around;
@@ -75,4 +75,33 @@ body {
 .nav-item i {
   font-size: 1.2rem;
   margin-bottom: 4px;
+}
+
+
+.alert-div {
+  position: fixed;
+  top: -100px;
+  right: 20px;
+  min-width: 280px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+  z-index: 99999;
+}
+
+.alert-div-show {
+  top: 20px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.MuiPaper-elevation {
+  display: flex;
+  gap: 17px;
+  border: 20px;
 }

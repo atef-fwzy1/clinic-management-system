@@ -1,0 +1,61 @@
+.notification-item {
+display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 12px;
+    flex-direction: revert;
+    margin: 14px;
+    border-radius: 16px;
+}
+
+.notification-item.highlighted {
+    background-color: #f1faf4;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.timestamp {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.body-text {
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Utility colors */
+.text-green {
+    color: #00875a;
+    font-weight: 500;
+}
+
+.text-red {
+    color: #d12929;
+    font-weight: 500;
+}

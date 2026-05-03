@@ -8,8 +8,8 @@ import { useContext } from "react";
 import { CurrentUserContext } from "../../Context/CurrentUserContext";
 import BottomNav from "../../components/BottonNav/BottomNav";
 export default function Nurse(){ 
-    const currentUser = useContext(CurrentUserContext)
-    console.log(currentUser)
+    const {currentuser} = useContext(CurrentUserContext)
+
     const INITIAL_PATIENTS = [
         { id: 1, number: "٢٤", name: "أحمد محمد علي",       time: "١٠:٣٠", type: "كشف جديد",  status: "ready"   },
         { id: 2, number: "٢٥", name: "محمود إبراهيم حسين",  time: "١٠:٤٥", type: "استشارة",   status: "waiting" },
@@ -37,7 +37,7 @@ export default function Nurse(){
     return(
         <div className="container">
               <div className="nurse">
-                     <TopBarNurse  nurseName={currentUser.name} clinicName={currentUser.clinicName}/>
+                     <TopBarNurse  nurseName={currentuser.name} clinicName={currentuser.clinicName}/>
                    <StatsRow nextNumber="٢٤" totalWaiting={patients.length} />
                          {patients.length > 0 ? (
                               patients.map((p, i) => (
@@ -58,7 +58,7 @@ export default function Nurse(){
                               <EmptyState message="مفيش مرضى تانيين في الانتظار" />
                             )}
                              <EmptyState message="مفيش مرضى تانيين في الانتظار" />
-                             <BottomNav/>
+                             {/* <BottomNav/> */}
               </div>
         </div>
     )

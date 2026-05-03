@@ -1,0 +1,49 @@
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  background: var(--color-surface);
+  background-color: #ffffff;
+
+}
+
+.notification-header__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+    margin-left: 25px;
+      color: black !important;
+}
+
+.notification-header__action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-teal);
+  font-family: var(--font-main);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 4px 0;
+    color: black !important;
+  transition: opacity 0.15s ease;
+}
+
+.notification-header__action:hover {
+  opacity: 0.75;
+}
+
+.notification-header__action svg {
+  flex-shrink: 0;
+    color: black !important;
+}
+
+.not-ico{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

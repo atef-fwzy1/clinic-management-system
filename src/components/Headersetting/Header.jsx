@@ -1,7 +1,8 @@
 import React from "react";
 import "./Header.css";
+import {Link} from"react-router"
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-export default function HeaderSeeting({title}) {
+export default function HeaderSeeting({title ,page}) {
   return (
     <div className="header" style={{direction: "ltr"}}>
       <div className="header-avatar">
@@ -16,7 +17,9 @@ export default function HeaderSeeting({title}) {
         </svg>
       </div>
       <h1 className="header-title">{title}</h1>
+      <Link to={page == "nurse" ?"/nurse":"/"}>
       <NavigateBeforeIcon/>
+      </Link>
     </div>
   );
 }

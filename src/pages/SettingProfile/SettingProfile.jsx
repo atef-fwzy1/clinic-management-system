@@ -7,15 +7,15 @@ import BottomNav from "../../components/BottonNav/BottomNav"
 import ButtLogout from "../../components/buttLogout/buttLogout"
 import { useContext } from "react";
 import { CurrentUserContext } from "../../Context/CurrentUserContext"
-export default function SettingProfile(){
-  const currentUser = useContext(CurrentUserContext)
+export default function SettingProfile({page}){
+  const {currentuser} = useContext(CurrentUserContext)
     return(
           <div className="headerseeting container">
-            <HeaderSeeting title={"إعدادات الحساب"}/>
-            <DoctorCard  name={currentUser.name} specialty={currentUser.clinicName} type={currentUser.type} />
+            <HeaderSeeting title={"إعدادات الحساب"} page={page}/>
+            <DoctorCard  name={currentuser.name} specialty={currentuser.clinicName} type={currentuser.type} />
             <Profilsetting/>
             <SettingsList/>
-            <BottomNav/>
+           {page !="nurse"&& <BottomNav/>}
             <ButtLogout/>
           </div>
     )

@@ -28,13 +28,14 @@ export default function RoleSelector({ selected, onChange }) {
       <span className="role-question">أنت مين؟</span>
       <div className="role-cards">
         <button
-          className={`role-card ${selected === "patient" ? "active" : ""}`}
-          onClick={() => onChange("patient")}
+          className={`role-card ${selected === "nurse" ? "active" : ""}`}
+          onClick={() => onChange("nurse")}
           type="button"
         >
-          <PatientIcon active={selected === "patient"} />
-          <span className="role-label">أستقبال</span>
+          <PatientIcon active={selected === "nurse"} />
+          <span className="role-label">ممرض</span>
         </button>
+
         <button
           className={`role-card ${selected === "doctor" ? "active" : ""}`}
           onClick={() => onChange("doctor")}
@@ -42,6 +43,16 @@ export default function RoleSelector({ selected, onChange }) {
         >
           <DoctorIcon active={selected === "doctor"} />
           <span className="role-label">دكتور</span>
+        </button>
+
+
+        <button
+          className={`role-card ${selected === "reception" ? "active" : ""}`}
+          onClick={() => onChange("reception")}
+          type="button"
+        >
+          <DoctorIcon active={selected === "reception"} />
+          <span className="role-label">استقبال</span>
         </button>
       </div>
     </div>

@@ -3,15 +3,11 @@ import "./DoctorCard.css";
 
 export default function DoctorCard({ name, specialty  , type}) {
 
-  //  name={currentUser.name} specialty={currentUser.clinicName} type={currentUser.type}
+  //  name={currentuser.name} specialty={currentuser.clinicName} type={currentuser.type}
   return (
     <div className="doctor-card-wrap">
       <div className="doctor-card">
-        <button className="doctor-arrow">
-          <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-            <path d="M7 1L1 7L7 13" stroke="#b0bcc8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
+       
         <div className="doctor-info doctor-info-cloumn" >
           <span className="doctor-name">{type=="nurse"?"ممرض " + name: "د." + name}</span>
           <span className="doctor-specialty">{specialty}</span>
