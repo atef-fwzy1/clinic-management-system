@@ -108,7 +108,7 @@ export default function SetSchedule() {
     setApiError("");
 
     try {
-      await axios.post("/api/DoctorSchedules", {
+      await axios.post("https://aminaminamin.runasp.net/api/DoctorSchedules", {
             "DoctorId":2,
             "ScheduleDate":form.scheduleDate,
             "StartTime": form.startTime,

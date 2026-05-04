@@ -30,7 +30,7 @@ import {ProtectedRouteNurse , ProtectedRouteDoctor ,ProtectedRouteAdminAndrecept
       // get data from localstorage
       const userInfi = JSON.parse(localStorage.getItem("userInfo")); 
       const [currentuser ,setCurrentuser ] = useState(userInfi)
-      console.log(currentuser)
+
       const [alert,SetAlert] = useState({show:false,type:"success" , mess :"This is a success Alert."})
      
       const HandelAlert = function(type,mess){

@@ -101,8 +101,8 @@ export default function Register() {
     const isEmployee = role === "nurse" || role === "reception";
 
     const url = isEmployee
-      ? "/api/Employee/AddNewEmployee"
-      : "/api/Doctor/AddNewDoctor";
+      ? "https://aminaminamin.runasp.net/api/Employee/AddNewEmployee"
+      : "https://aminaminamin.runasp.net/api/Doctor/AddNewDoctor";
 
     const formdata = new FormData();
     const formdataDoc = new FormData();

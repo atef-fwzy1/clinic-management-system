@@ -183,7 +183,7 @@ console.log(showAlert)
   useEffect(()=>{
   
 
-axios.get("/api/Doctor/GetAllDoctors")
+axios.get("https://aminaminamin.runasp.net/api/Doctor/GetAllDoctors")
   .then((res) => {
     setDOCTORS(res.data.data);
   })
@@ -238,7 +238,7 @@ console.log(form.doctorId)
 
 
   
-axios.post("/api/Employee/RegisterAndBook", {
+axios.post("https://aminaminamin.runasp.net/api/Employee/RegisterAndBook", {
   FullName: form.fullName.trim(),
   PhoneNumber: form.phoneNumber.trim(),
   DoctorId: Number(form.doctorId),
