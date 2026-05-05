@@ -61,7 +61,7 @@ const handleChange = (field, value) => {
                 else if(data.data.data.role == "Doctor")
                     window.location.pathname = "/"
                else if(data.data.data.role == "Admin" || data.data.data.role == "Reception" )
-                    window.location.pathname ="/Dashboardd"  
+                    window.location.pathname =   "/dashboard"  
                 else 
                   handelAlert("error", "ليس لديك اي صلحيات في الوصول")
 

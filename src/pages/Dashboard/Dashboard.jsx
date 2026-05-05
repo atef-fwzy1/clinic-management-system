@@ -197,7 +197,7 @@ const showAppoinment = useContext(addappointmentContext)
               <div className="page-title">User Management</div>
               <div className="page-sub">Manage all system users and their permissions</div>
             </div>
-            <Link to="/Dashboardd/addappointment">
+            <Link to="/dashboard/addappointment">
             <button onClick={()=> showAppoinment.setShowaddAppoint(true)} className="add-btn">＋ <span>Add New User</span></button>
             </Link>
           </div>
