@@ -71,7 +71,7 @@ import {ProtectedRouteNurse , ProtectedRouteDoctor ,ProtectedRouteAdminAndrecept
 
                {/* brotected route for admin and reception  */}
              <Route element={<ProtectedRouteAdminAndreception allowedRoles={["Admin","Reception"]}/> }>
-               <Route path='/dashboard' element={<Dashboard />}>
+               <Route path='/dashboardd' element={<Dashboard />}>
                         <Route path='addappointment' element={<AddAppointment/>}/>
                </Route>
                     
